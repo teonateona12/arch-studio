@@ -1,9 +1,13 @@
 import React from "react";
+import Home from "./pages/Home.jsx";
+import { Route, Routes } from "react-router-dom";
 
 export function App() {
   return (
     <div>
-      <h1>welcome {new Date().toDateString()}</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }

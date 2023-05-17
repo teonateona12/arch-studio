@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header.jsx";
 import ProjectMobile from "../assets/home/mobile/image-hero-paramour.jpg";
 import ProjectTablet from "../assets/home/tablet/image-hero-paramour.jpg";
 import ProjectDesktop from "../assets/home/desktop/image-hero-paramour.jpg";
@@ -8,15 +7,12 @@ import Welcome from "../assets/home/desktop/image-welcome.jpg";
 import TeamMobile from "../assets/home/mobile/image-small-team.jpg";
 import TeamTablet from "../assets/home/tablet/image-small-team.jpg";
 import TeamDesktop from "../assets/home/desktop/image-small-team.jpg";
-
 import OneMobile from "../assets/portfolio/mobile/image-prototype.jpg";
 import OneTablet from "../assets/portfolio/tablet/image-prototype.jpg";
 import OneDesktop from "../assets/portfolio/desktop/image-prototype.jpg";
-
 import TwoMobile from "../assets/portfolio/mobile/image-228b.jpg";
 import TwoTablet from "../assets/portfolio/tablet/image-228b.jpg";
 import TwoDesktop from "../assets/portfolio/desktop/image-228b.jpg";
-
 import ThreeMobile from "../assets/portfolio/mobile/image-del-sol.jpg";
 import ThreeTablet from "../assets/portfolio/tablet/image-del-sol.jpg";
 import ThreeDesktop from "../assets/portfolio/desktop/image-del-sol.jpg";
@@ -24,7 +20,6 @@ import ThreeDesktop from "../assets/portfolio/desktop/image-del-sol.jpg";
 export default function Home() {
   return (
     <div>
-      <Header />
       <div className="project">
         <img className="mobile" src={ProjectMobile} />
         <img className="tablet" src={ProjectTablet} />
@@ -96,7 +91,7 @@ export default function Home() {
             </div>
           </div>
           <div className="one-text-image">
-            <img className="two-mobile" src={TeamMobile} />
+            <img className="two-mobile" src={TwoMobile} />
             <img className="two-tablet" src={TwoTablet} />
             <img className="two-desktop" src={TwoDesktop} />
             <div>

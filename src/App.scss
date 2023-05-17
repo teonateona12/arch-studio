@@ -29,6 +29,7 @@ button {
   }
 }
 .project {
+  position: relative;
   .tablet,
   .desktop {
     display: none;
@@ -85,6 +86,94 @@ button {
   width: 75%;
   right: 0;
 }
+.welcome {
+  padding: 32px;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.71429px;
+    color: #1b1d23;
+  }
+  p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #60636d;
+  }
+  img {
+    display: none;
+  }
+}
+.featured {
+  padding: 32px;
+  .featured-text-div {
+    display: flex;
+    justify-content: space-between;
+
+    .button-div {
+      display: flex;
+      gap: 10px;
+      background-color: #1b1d23;
+      padding: 3% 5%;
+      margin-bottom: 5%;
+      p {
+        width: 100%;
+        color: white;
+      }
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  .images-div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .one-text-image {
+      position: relative;
+      div {
+        position: absolute;
+        left: 10%;
+        top: 80%;
+        h3 {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 40px;
+          color: #ffffff;
+        }
+        button {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          color: #ffffff;
+          mix-blend-mode: normal;
+          opacity: 0.75;
+        }
+      }
+      .one-tablet,
+      .one-desktop,
+      .two-tablet,
+      .two-desktop,
+      .three-tablet,
+      .three-desktop {
+        display: none;
+        width: 100%;
+      }
+      .one-mobile,
+      .two-mobile,
+      .three-mobile {
+        width: 100%;
+      }
+    }
+  }
+}
 @media (min-width: 768px) {
   .header {
     padding: 56px;
@@ -110,9 +199,33 @@ button {
       h1 {
         font-size: 96px;
         line-height: 80px;
-        /* or 83% */
-
         letter-spacing: -2px;
+      }
+    }
+  }
+  .welcome {
+    padding: 56px;
+    h3 {
+      font-size: 72px;
+      line-height: 64px;
+      letter-spacing: -2px;
+    }
+  }
+  .featured {
+    padding: 56px;
+
+    .images-div {
+      .one-text-image {
+        .one-mobile,
+        .two-mobile,
+        .three-mobile {
+          display: none;
+        }
+        .one-tablet,
+        .two-tablet,
+        .three-tablet {
+          display: block;
+        }
       }
     }
   }
@@ -135,6 +248,36 @@ button {
     }
     .tablet {
       display: none;
+    }
+  }
+  .welcome {
+    display: flex;
+    gap: 10%;
+    padding: 5% 10% 3% 20%;
+    img {
+      display: block;
+    }
+    div {
+      gap: 50px;
+    }
+  }
+  .featured {
+    padding: 3% 10%;
+
+    .images-div {
+      flex-direction: row;
+      .one-text-image {
+        .one-desktop,
+        .two-desktop,
+        .three-desktop {
+          display: block;
+        }
+        .one-tablet,
+        .two-tablet,
+        .three-tablet {
+          display: none;
+        }
+      }
     }
   }
 }

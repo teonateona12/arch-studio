@@ -1,17 +1,28 @@
 import React from "react";
 import Arrow from "../assets/icons/icon-arrow.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer>
       <div className="logo">
-        <h2>Arch</h2>
+        <Link to="/">
+          <h2>Arch</h2>
+        </Link>
       </div>
-      <p>Portfolio</p>
-      <p> About Us</p>
-      <p>Contact</p>
+      <Link to="/portfolio">
+        <p>Portfolio</p>
+      </Link>
+      <Link to="/about">
+        <p>About Us</p>
+      </Link>
+      <Link to="/contact">
+        <p> Contact</p>
+      </Link>
       <div className="button-div">
-        <p>See Our Portfolio</p>
+        <Link to="/portfolio">
+          <p>See Our Portfolio</p>
+        </Link>
         <img src={Arrow} />
       </div>
     </footer>

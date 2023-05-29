@@ -16,6 +16,7 @@ import TwoDesktop from "../assets/portfolio/desktop/image-228b.jpg";
 import ThreeMobile from "../assets/portfolio/mobile/image-del-sol.jpg";
 import ThreeTablet from "../assets/portfolio/tablet/image-del-sol.jpg";
 import ThreeDesktop from "../assets/portfolio/desktop/image-del-sol.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -34,7 +35,9 @@ export default function Home() {
             Paramour is a statement of bold, modern architecture.
           </p>
           <div className="button-div">
-            <button>See Our Portfolio</button>
+            <Link to="/portfolio">
+              <button>See Our Portfolio</button>
+            </Link>
             <img src={Arrow} />
           </div>
         </div>
@@ -67,7 +70,9 @@ export default function Home() {
             big ideas
           </h1>
           <div className="button-div">
-            <button>About Us</button>
+            <Link to="/about">
+              <button>About Us</button>
+            </Link>
             <img src={Arrow} />
           </div>
         </div>
@@ -76,7 +81,9 @@ export default function Home() {
         <div className="featured-text-div">
           <h3>Featured</h3>
           <div className="button-div">
-            <p>See All</p>
+            <Link to="/portfolio">
+              <p>See All</p>
+            </Link>
             <img src={Arrow} />
           </div>
         </div>
@@ -87,7 +94,9 @@ export default function Home() {
             <img className="one-desktop" src={OneDesktop} />
             <div>
               <h3>Project Del Sol</h3>
-              <button>View All Projects</button>
+              <Link to="/portfolio">
+                <button>View All Projects</button>
+              </Link>
             </div>
           </div>
           <div className="one-text-image">
@@ -96,7 +105,9 @@ export default function Home() {
             <img className="two-desktop" src={TwoDesktop} />
             <div>
               <h3>Project Del Sol</h3>
-              <button>View All Projects</button>
+              <Link to="/portfolio">
+                <button>View All Projects</button>
+              </Link>
             </div>
           </div>
           <div className="one-text-image">
@@ -105,7 +116,9 @@ export default function Home() {
             <img className="three-desktop" src={ThreeDesktop} />
             <div>
               <h3>Project Del Sol</h3>
-              <button>View All Projects</button>
+              <Link to="/portfolio">
+                <button>View All Projects</button>
+              </Link>
             </div>
           </div>
         </div>

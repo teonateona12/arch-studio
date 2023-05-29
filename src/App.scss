@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  max-width: 1440px;
+  margin: auto;
+}
 button {
   background: none;
   border: none;
@@ -246,6 +250,19 @@ footer {
   display: flex;
   gap: 10px;
 }
+.contact {
+  img {
+    width: 100%;
+  }
+  .main,
+  .contact-div {
+    padding: 32px;
+  }
+  .detail {
+    padding-left: 32px;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     padding: 56px;
@@ -345,6 +362,23 @@ footer {
       margin-left: 5%;
     }
   }
+  .contact {
+    .img-text {
+      display: flex;
+      padding: 56px;
+    }
+    .main,
+    .contact-div {
+      padding: 56px;
+    }
+    .main {
+      display: flex;
+      gap: 50px;
+    }
+    .detail {
+      padding-left: 56px;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
@@ -427,6 +461,22 @@ footer {
       .text-div {
         width: 50%;
       }
+    }
+  }
+  .contact {
+    .img-text {
+      padding: 3% 10%;
+    }
+    .main,
+    .contact-div {
+      padding: 0% 10%;
+    }
+    .main {
+      display: flex;
+      gap: 150px;
+    }
+    .detail {
+      padding-left: 10%;
     }
   }
 }

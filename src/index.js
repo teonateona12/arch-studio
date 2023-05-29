@@ -1,14 +1,14 @@
-require("file-loader?name=[name].[ext]!./index.html");
 import React from "react";
+import ReactDOM from "react-dom";
 import { App } from "./App";
 import "./App.scss";
 import { BrowserRouter } from "react-router-dom";
 
-import { createRoot } from "react-dom/client";
 const container = document.getElementById("app");
-const root = createRoot(container);
-root.render(
+
+ReactDOM.render(
   <BrowserRouter>
-    <App tab="home" />
-  </BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  container
 );

@@ -229,6 +229,23 @@ footer {
     }
   }
 }
+.about {
+  img {
+    width: 100%;
+  }
+  .text-div {
+    padding: 32px;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+  }
+}
+.heritage {
+  padding: 32px;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
 @media (min-width: 768px) {
   .header {
     padding: 56px;
@@ -311,6 +328,23 @@ footer {
       }
     }
   }
+  .about {
+    .about-div {
+      display: flex;
+      .text-div {
+        width: 50%;
+      }
+    }
+  }
+  .heritage {
+    padding: 56px;
+    display: flex;
+    flex-direction: row;
+    div {
+      margin-top: 5%;
+      margin-left: 5%;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
@@ -380,6 +414,18 @@ footer {
       .text-div {
         margin-top: -20%;
         margin-left: 5%;
+      }
+    }
+  }
+
+  .about,
+  .heritage {
+    padding: 3% 10%;
+    .about-div {
+      display: flex;
+
+      .text-div {
+        width: 50%;
       }
     }
   }
